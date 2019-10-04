@@ -68,4 +68,5 @@ public class UserMealsUtil {
                         mealList.stream().filter(y -> y.getDateTime().toLocalDate().equals(x.getDateTime().toLocalDate())).mapToInt(UserMeal::getCalories).sum() > caloriesPerDay))
                 .collect(Collectors.toList());
     }
+
 }
