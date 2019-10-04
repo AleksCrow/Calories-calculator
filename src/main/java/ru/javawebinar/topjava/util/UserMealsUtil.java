@@ -67,6 +67,5 @@ public class UserMealsUtil {
                         //filter with calculate calories in some days and boolean result for exceed
                         mealList.stream().filter(y -> y.getDateTime().toLocalDate().equals(x.getDateTime().toLocalDate())).mapToInt(UserMeal::getCalories).sum() > caloriesPerDay))
                 .collect(Collectors.toList());
-
     }
 }
