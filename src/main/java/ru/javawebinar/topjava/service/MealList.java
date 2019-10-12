@@ -10,7 +10,6 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class MealList implements MealDao {
-
     private AtomicLong id = new AtomicLong();
     private static final MealList mealList = new MealList();
     private ConcurrentMap<Long, Meal> mealMap = new ConcurrentHashMap<>();
